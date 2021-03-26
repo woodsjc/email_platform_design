@@ -76,7 +76,7 @@ GET /email
 
 GET /email/{id}
 
-### returns
+#### returns
 
 ```json
 {
@@ -99,7 +99,7 @@ search required
 
 to, from optional
 
-### returns
+#### returns
 
 ```json
 [
@@ -121,7 +121,7 @@ GET /emails/stats
 
 GET /email/stats
 
-### returns
+#### returns
 
 ```json
 {
