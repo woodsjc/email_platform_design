@@ -1,4 +1,4 @@
-# Email schema
+# Power Email 
 
 ## db design
 
