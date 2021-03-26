@@ -14,7 +14,7 @@ Taking postgres as example, to speed up text searching within the email bodies. 
 
 #### Move to distributed microservice solution 
 
-Another option is something like elasticsearch which is built mainly around text searching. This scales really well horizontally and would work with something the scale of GMAIL. A traditional relational database will start to struggle with millions of concurrent requests. But can be mitigated to an extent with replicas, caching as well as sharding. Designing for the biggest scale initially is putting the cart before the horse though.
+Elasticsearch which is built mainly around text searching and a great addition for performant queries. This scales really well horizontally and would work with something the scale of GMAIL. A traditional relational database will start to struggle with millions of concurrent requests. But can be mitigated to an extent with replicas, caching as well as sharding. Designing for the biggest scale initially is putting the cart before the horse though.
 
 ## Pipeline to machine learning models
 
@@ -71,7 +71,9 @@ Success, Unauthorized, Invalid (bad request)
 #### routes
 
 GET /emails
+
 GET /email
+
 GET /email/{id}
 
 ### returns
@@ -94,6 +96,7 @@ GET /email/{id}
 GET /emails?search={search}&to={to}&from={from}
 
 search required
+
 to, from optional
 
 ### returns
@@ -115,6 +118,7 @@ to, from optional
 #### route
 
 GET /emails/stats
+
 GET /email/stats
 
 ### returns
