@@ -93,9 +93,9 @@ GET /email/{id}
 
 #### route
 
-GET /emails?search={search}&to={to}&from={from}
+GET /emails/search?q={keywords}&to={to}&from={from}
 
-search required
+keywords required
 
 to, from optional
 
@@ -109,7 +109,12 @@ to, from optional
     "header": "email headers",
     "body": "this is my message"
 },
-...
+{
+    "from": "user1@email.com",
+    "to": "anotheruser1@anotheremail.com",
+    "header": "email headers",
+    "body": "this is my message"
+}
 ]
 ```
 
